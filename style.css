@@ -6,6 +6,7 @@
 
 body{
     background-color: aquamarine;
+    font-family: sans-serif;
 }
 
 .container{
@@ -28,8 +29,14 @@ ul{
     list-style: none;
    
 }
+ul a{
+    color: #fff;
+    text-decoration: none;
+}
 
 ul li{
+    padding: 1em;
+    text-transform: uppercase;
     display: inline-block;
     background-color: black;
     color: white;
