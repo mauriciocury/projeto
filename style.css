@@ -7,6 +7,8 @@
 body{
     background-color: aquamarine;
     font-family: sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
 .container{
@@ -15,15 +17,23 @@ body{
     padding: 1em;
     background-color: aliceblue;
     margin: 1em;
+    width: 90%;
 }
 
 header, main, footer, nav{
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    gap:1em;
 }
 
 main{
     height: 50em;
 }
+
 
 ul{
     list-style: none;
@@ -31,13 +41,20 @@ ul{
 }
 ul a{
     color: #fff;
+    background-color: black;
+    padding: 1em;
+    color: white;
     text-decoration: none;
+    font-weight: 600;
+}
+ul a:hover{
+
+
+
+
 }
 
 ul li{
-    padding: 1em;
     text-transform: uppercase;
     display: inline-block;
-    background-color: black;
-    color: white;
 }
