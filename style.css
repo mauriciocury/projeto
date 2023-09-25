@@ -3,9 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --fundo: ghostwhite;
+}
 
 body{
-    background-color: aquamarine;
+    background-color: #111;
     font-family: sans-serif;
     display: flex;
     justify-content: center;
@@ -15,46 +18,57 @@ body{
     display: grid;
     gap: 1em;
     padding: 1em;
-    background-color: aliceblue;
     margin: 1em;
     width: 90%;
 }
 
-header, main, footer, nav{
+header, main, footer, nav, ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 header{
-    gap:1em;
+    height: 10em;
+    gap:3em;
+    background-color: var(--fundo);
 }
+
 
 main{
     height: 50em;
+    background-color: var(--fundo);
 }
 
-
 ul{
+    display: flex;
+    flex-direction: row;
     list-style: none;
+    gap:1em;
+
    
 }
 ul a{
     color: #fff;
     background-color: black;
+    border-radius: 1em;
     padding: 1em;
     color: white;
     text-decoration: none;
     font-weight: 600;
 }
 ul a:hover{
-
-
-
-
+    color:black
+    background-color:#ddd;
 }
 
 ul li{
     text-transform: uppercase;
     display: inline-block;
+}
+
+footer{
+    border-radius: 1em;
+    background-color: var(--fundo);
+    padding: 1em;
 }
