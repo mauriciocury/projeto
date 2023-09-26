@@ -12,6 +12,7 @@ body{
     font-family: sans-serif;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .container{
@@ -27,6 +28,7 @@ header, main, footer, nav, ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 1em;
 }
 header{
     height: 10em;
@@ -36,8 +38,13 @@ header{
 
 
 main{
-    height: 50em;
+    gap:1em;
     background-color: var(--fundo);
+    padding: 1em;
+}
+
+main p,li{
+    font-size: 1.2em;
 }
 
 ul{
@@ -48,6 +55,12 @@ ul{
 
    
 }
+#imagens{
+ display: flex;
+ gap:1em;
+ flex-wrap: wrap;
+ width: 60%;
+}
 ul a{
     color: #fff;
     background-color: black;
@@ -56,10 +69,12 @@ ul a{
     color: white;
     text-decoration: none;
     font-weight: 600;
+    border:2px solid black;
 }
 ul a:hover{
-    color:black
-    background-color:#ddd;
+    color:black;
+    border:2px solid black;
+    background-color:white;
 }
 
 ul li{
@@ -71,4 +86,15 @@ footer{
     border-radius: 1em;
     background-color: var(--fundo);
     padding: 1em;
+}
+img{
+    width: 300px;
+    transition: transform 300ms;
+
+}
+img:hover{
+    transform: scale(1.1);
+}
+.imagens{
+    align-items: center;
 }
